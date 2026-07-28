@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is CodeAlpha?",
+    "answer": "CodeAlpha is a software development company offering internship programs across domains like AI, Web Development, and Data Science."
+  },
+  {
+    "question": "How long is the internship?",
+    "answer": "The internship duration is typically 4 weeks, but you can complete tasks at your own pace within the given deadline."
+  },
+  {
+    "question": "How many tasks do I need to complete?",
+    "answer": "You need to complete a minimum of 2 out of the 4 listed tasks to be eligible for the completion certificate."
+  },
+  {
+    "question": "Is the internship paid?",
+    "answer": "No, this is an unpaid internship program, but it provides a certificate, letter of recommendation, and job/placement support."
+  },
+  {
+    "question": "How do I submit my project?",
+    "answer": "You must upload your source code to GitHub (repo named CodeAlpha_ProjectName) and submit it through the submission form shared in your WhatsApp group."
+  },
+  {
+    "question": "Do I get a certificate?",
+    "answer": "Yes, upon successful completion of at least 2 tasks, you receive a QR-verified completion certificate and a unique ID certificate."
+  },
+  {
+    "question": "Can I get a letter of recommendation?",
+    "answer": "Yes, a Letter of Recommendation is provided based on your performance during the internship."
+  },
+  {
+    "question": "What if I only complete one task?",
+    "answer": "Completing only one task is considered incomplete, and no certificate will be issued in that case."
+  },
+  {
+    "question": "Do I need to post about the internship on LinkedIn?",
+    "answer": "Yes, you are required to share your internship status on LinkedIn and tag @CodeAlpha, and also post a video explanation of your project with the GitHub repo link."
+  },
+  {
+    "question": "How can I contact CodeAlpha for support?",
+    "answer": "You can reach out via WhatsApp at +91 9336576683 or email at services@codealpha.tech / services.codealpha@gmail.com."
+  }
+]
