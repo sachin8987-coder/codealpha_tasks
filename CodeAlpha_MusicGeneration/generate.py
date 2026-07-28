@@ -16,9 +16,12 @@ import numpy as np
 from music21 import stream, note, chord, instrument
 from keras.models import load_model
 
-MODEL_FILE = "music_model.keras"
-MAPPING_FILE = "mappings.pkl"
-DEFAULT_OUTPUT = "generated_music.mid"
+import os
+
+_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_FILE = os.path.join(_BASE_DIR, "music_model.keras")
+MAPPING_FILE = os.path.join(_BASE_DIR, "mappings.pkl")
+DEFAULT_OUTPUT = os.path.join(_BASE_DIR, "generated_music.mid")
 
 
 def load_artifacts():
