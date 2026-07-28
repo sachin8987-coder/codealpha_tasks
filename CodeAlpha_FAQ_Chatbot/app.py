@@ -6,6 +6,7 @@ with the best-matching answer.
 """
 
 import json
+import os
 import re
 import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -18,7 +19,9 @@ st.caption("CodeAlpha AI Internship - Task 2")
 
 
 @st.cache_resource
-def load_faqs(path="faqs.json"):
+def load_faqs(path=None):
+    if path is None:
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "faqs.json")
     with open(path, "r", encoding="utf-8") as f:
         data = json.load(f)
     questions = [item["question"] for item in data]
