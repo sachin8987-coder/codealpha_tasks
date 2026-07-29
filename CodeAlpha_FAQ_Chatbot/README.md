@@ -2,6 +2,8 @@
 
 **CodeAlpha AI Internship — Task 2: Chatbot for FAQs**
 
+🔗 **Live Demo:** https://codealphatasks-gy6utfuyh9ixgnzvoiabk6.streamlit.app
+
 A Streamlit chatbot that answers user questions by matching them against a
 set of FAQs using TF-IDF vectorization + cosine similarity.
 
@@ -21,8 +23,8 @@ set of FAQs using TF-IDF vectorization + cosine similarity.
 ## Run Locally
 
 ```bash
-git clone https://github.com/<your-username>/CodeAlpha_FAQChatbot.git
-cd CodeAlpha_FAQChatbot
+git clone https://github.com/sachin8987-coder/codealpha_tasks.git
+cd codealpha_tasks/CodeAlpha_FAQ_Chatbot
 pip install -r requirements.txt
 streamlit run app.py
 ```
@@ -36,30 +38,23 @@ objects. No retraining needed; the TF-IDF matrix rebuilds automatically
 
 ## 🚀 Deployment (Streamlit Community Cloud — Free)
 
-1. **Push to GitHub**
-   ```bash
-   git init
-   git add .
-   git commit -m "Task 2: FAQ Chatbot"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/CodeAlpha_FAQChatbot.git
-   git push -u origin main
-   ```
-   Repo name **must** be `CodeAlpha_FAQChatbot` (per internship naming rule:
-   `CodeAlpha_ProjectName`).
+This project lives inside the `codealpha_tasks` repo, alongside the other
+CodeAlpha internship projects, as the `CodeAlpha_FAQ_Chatbot` subfolder.
+
+1. **Push to GitHub** (already done — part of the shared `codealpha_tasks` repo)
 
 2. **Deploy on Streamlit Cloud**
    - Go to https://share.streamlit.io and sign in with GitHub.
-   - Click **"Create app"** → **"From existing repo"**.
-   - Select the repo, branch `main`, main file path `app.py`.
+   - Click **"Create app"** → select repo `sachin8987-coder/codealpha_tasks`.
+   - Branch: `main`
+   - Main file path: `CodeAlpha_FAQ_Chatbot/app.py`
    - Click **Deploy**. Wait 1–2 minutes.
-   - You'll get a public URL like `https://codealpha-faqchatbot-yourname.streamlit.app`.
+   - You'll get a public URL like the live demo link above.
 
 3. **Verify**
    - Open the URL and test a few questions to confirm matching works live.
 
 4. **Submit**
-   - Add the live URL + a screenshot to `README.md`.
    - Record a short video explaining the project, post on LinkedIn tagging
      **@CodeAlpha**, and include the GitHub repo link.
    - Fill the CodeAlpha submission form with repo link + LinkedIn post link.
