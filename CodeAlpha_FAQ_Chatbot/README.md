@@ -49,6 +49,9 @@ CodeAlpha internship projects, as the `CodeAlpha_FAQ_Chatbot` subfolder.
    - Branch: `main`
    - Main file path: `CodeAlpha_FAQ_Chatbot/app.py`
    - **Deploy**
+3. Verify
+   
+4.**Submit**
      
 
 
