@@ -2,6 +2,8 @@
 
 **CodeAlpha AI Internship — Task 1: Language Translation Tool**
 
+🔗 **Live Demo:** https://codealphatasks-bo7xsy4fsihgk7pyjxfrbp.streamlit.app/
+
 A Streamlit web app that translates text between 100+ languages using the free
 Google Translate backend (`deep-translator`), with optional text-to-speech
 playback of the translation.
@@ -22,8 +24,8 @@ playback of the translation.
 ## Run Locally
 
 ```bash
-git clone https://github.com/<your-username>/CodeAlpha_LanguageTranslationTool.git
-cd CodeAlpha_LanguageTranslationTool
+git clone https://github.com/sachin8987-coder/codealpha_tasks.git
+cd codealpha_tasks/CodeAlpha_LanguageTranslationTool
 pip install -r requirements.txt
 streamlit run app.py
 ```
@@ -32,30 +34,23 @@ App opens at `http://localhost:8501`.
 
 ## 🚀 Deployment (Streamlit Community Cloud — Free)
 
-1. **Push to GitHub**
-   ```bash
-   git init
-   git add .
-   git commit -m "Task 1: Language Translation Tool"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/CodeAlpha_LanguageTranslationTool.git
-   git push -u origin main
-   ```
-   Repo name **must** be `CodeAlpha_LanguageTranslationTool` (per internship rules).
+This project lives inside the `codealpha_tasks` repo, alongside the other
+CodeAlpha internship projects, as the `CodeAlpha_LanguageTranslationTool` subfolder.
+
+1. **Push to GitHub** (already done — part of the shared `codealpha_tasks` repo)
 
 2. **Deploy on Streamlit Cloud**
    - Go to https://share.streamlit.io and sign in with GitHub.
-   - Click **"Create app"** → **"From existing repo"**.
-   - Select your repo, branch `main`, and main file path `app.py`.
+   - Click **"Create app"** → select repo `sachin8987-coder/codealpha_tasks`.
+   - Branch: `main`
+   - Main file path: `CodeAlpha_LanguageTranslationTool/app.py`
    - Click **Deploy**. Wait 1–2 minutes for the build.
-   - You'll get a live public URL like `https://codealpha-translation-yourname.streamlit.app`.
+   - You'll get a live public URL like the live demo link above.
 
 3. **Verify**
    - Open the URL, test a translation, confirm it works publicly (not just localhost).
 
 4. **Submit**
-   - Add the live URL + a screenshot/GIF to your `README.md`.
-   - Push your source code to GitHub (already done in step 1).
    - Record a short screen-recording explaining the project, post it on LinkedIn
      tagging **@CodeAlpha**, and include the GitHub repo link.
    - Fill the CodeAlpha submission form with the repo link + LinkedIn post link.
