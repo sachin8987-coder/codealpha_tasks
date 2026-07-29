@@ -37,27 +37,18 @@ App opens at `http://localhost:8501`.
 This project lives inside the `codealpha_tasks` repo, alongside the other
 CodeAlpha internship projects, as the `CodeAlpha_LanguageTranslationTool` subfolder.
 
-1. **Push to GitHub** (already done — part of the shared `codealpha_tasks` repo)
+1. **Push to GitHub**
 
 2. **Deploy on Streamlit Cloud**
-   - Go to https://share.streamlit.io and sign in with GitHub.
-   - Click **"Create app"** → select repo `sachin8987-coder/codealpha_tasks`.
+   - https://share.streamlit.io and sign in with GitHub.
+   -  **"Create app"** → `sachin8987-coder/codealpha_tasks`.
    - Branch: `main`
    - Main file path: `CodeAlpha_LanguageTranslationTool/app.py`
-   - Click **Deploy**. Wait 1–2 minutes for the build.
-   - You'll get a live public URL like the live demo link above.
+   - Click **Deploy**.
+   - You'll get a live demo link 
 
 3. **Verify**
    - Open the URL, test a translation, confirm it works publicly (not just localhost).
 
 4. **Submit**
-   - Record a short screen-recording explaining the project, post it on LinkedIn
-     tagging **@CodeAlpha**, and include the GitHub repo link.
-   - Fill the CodeAlpha submission form with the repo link + LinkedIn post link.
 
-## Notes
-- No paid API key required — uses the free Google Translate web endpoint via
-  `deep-translator`. For production/commercial use, consider the official
-  Google Cloud Translation API instead.
-- If gTTS fails for a language, that language may not support TTS — translation
-  itself still works.
