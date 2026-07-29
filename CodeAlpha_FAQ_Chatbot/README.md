@@ -50,8 +50,12 @@ CodeAlpha internship projects, as the `CodeAlpha_FAQ_Chatbot` subfolder.
    - Main file path: `CodeAlpha_FAQ_Chatbot/app.py`
    - **Deploy**
 3. Verify
+     open the URL
    
-4.**Submit**
+4. **Submit**
+   
+   
+  
      
 
 
