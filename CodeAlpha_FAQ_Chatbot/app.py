@@ -66,7 +66,7 @@ def get_best_answer(user_query: str):
     return answers[best_idx], best_score, questions[best_idx]
 
 
-# --- Chat UI ---
+# Chat UI
 if "messages" not in st.session_state:
     st.session_state.messages = [
         {"role": "assistant", "content": "Hi! Ask me anything about the CodeAlpha internship. 👋"}
