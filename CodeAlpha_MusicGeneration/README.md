@@ -2,6 +2,8 @@
 
 **CodeAlpha AI Internship — Task 3: Music Generation with AI**
 
+🔗 **Live Demo:** https://codealphatasks-gsmhqmddqpth3ai3viujkm.streamlit.app/
+
 An LSTM neural network trained on Bach chorales (using `music21`'s bundled
 corpus — no external MIDI download needed) that composes new, original
 music. A Streamlit UI lets you generate a fresh piece on demand and download
@@ -25,7 +27,7 @@ included in this folder, so the app works immediately — no training needed
 before deploying.
 
 ## Tech Stack
-- Python
+- Python 3.11
 - TensorFlow / Keras (LSTM)
 - music21 (MIDI parsing/generation, bundled Bach corpus)
 - Streamlit (UI)
@@ -34,7 +36,8 @@ before deploying.
 ## Run Locally
 
 ```bash
-cd CodeAlpha_MusicGeneration
+git clone https://github.com/sachin8987-coder/codealpha_tasks.git
+cd codealpha_tasks/CodeAlpha_MusicGeneration
 pip install -r requirements.txt
 streamlit run app.py
 ```
@@ -48,54 +51,30 @@ python train.py          # trains and saves music_model.keras + mappings.pkl
 ## 🚀 Deployment — Single Repo, Multiple Project Subfolders
 
 This project lives inside the shared **`codealpha_tasks`** repo, alongside
-your other CodeAlpha projects (one subfolder per task).
+the other CodeAlpha internship projects, as the `CodeAlpha_MusicGeneration`
+subfolder.
 
-### 1. Add this folder to your existing local repo
-Copy the `CodeAlpha_MusicGeneration` folder into your local `codealpha_tasks`
-folder (the same one that already has `CodeAlpha_Chatbot`,
-`CodeAlpha_Hangman`, etc.), so it sits next to them:
+1. **Push to GitHub** (already done — part of the shared `codealpha_tasks` repo)
 
-```
-codealpha_tasks/
-    CodeAlpha_Chatbot/
-    CodeAlpha_Hangman/
-    CodeAlpha_IRIS_Flower_Classification/
-    CodeAlpha_MusicGeneration/   <-- new
-    README.md
-```
+2. **Deploy on Streamlit Cloud**
+   - Go to https://share.streamlit.io → sign in with GitHub.
+   - Click **"Create app"** → select repo `sachin8987-coder/codealpha_tasks`.
+   - Branch: `main`
+   - Main file path: `CodeAlpha_MusicGeneration/app.py`
+   - **Advanced settings → Python version: 3.11** (required — TensorFlow
+     doesn't yet ship wheels for the newest Python versions Streamlit Cloud
+     defaults to).
+   - Click **Deploy**. First build takes a few minutes (TensorFlow is a
+     larger dependency).
+   - You'll get a live URL like the demo link above.
 
-### 2. Commit and push
-```bash
-cd codealpha_tasks
-git add CodeAlpha_MusicGeneration
-git commit -m "Added Music Generation with AI project"
-git push
-```
-(If it's your first push, use `git init`, `git remote add origin <your-repo-url>`,
-`git branch -M main`, `git push -u origin main` instead.)
-
-### 3. Deploy the Streamlit app
-Streamlit Cloud deploys **one app per main file**, so for a multi-project
-repo you point it at this project's `app.py` specifically:
-
-1. Go to https://share.streamlit.io → sign in with GitHub.
-2. Click **"Create app"** → **"From existing repo"**.
-3. Repository: `<your-username>/codealpha_tasks`
-4. Branch: `main`
-5. **Main file path: `CodeAlpha_MusicGeneration/app.py`** (this is the key
-   step for a subfolder project — Streamlit needs the full path, not just
-   `app.py`).
-6. Click **Deploy**. First build may take a couple of minutes (TensorFlow is
-   a larger dependency).
-7. You'll get a live URL like `https://codealpha-music-yourname.streamlit.app`.
-
-### 4. Verify & Submit
-- Open the live URL, click "Generate New Music", download the `.mid`, and
-  play it in any MIDI player (VLC, MuseScore, Windows Media Player) to
-  confirm it sounds musical (not random noise).
-- Record a short video explaining the project, post it on LinkedIn tagging
-  **@CodeAlpha** with the repo link.
-- Submit the repo link + LinkedIn post link via the WhatsApp submission form.
+3. **Verify & Submit**
+   - Open the live URL, click "Generate New Music", download the `.mid`, and
+     play it in any MIDI player (VLC, MuseScore, Windows Media Player) to
+     confirm it sounds musical (not random noise).
+   - Record a short video explaining the project, post it on LinkedIn tagging
+     **@CodeAlpha** with the repo link.
+   - Submit the repo link + LinkedIn post link via the submission form.
 
 ## Notes
 - Training uses only 40 chorales / 40 epochs to keep things fast for a demo —
