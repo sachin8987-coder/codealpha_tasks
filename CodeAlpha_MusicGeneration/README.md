@@ -54,32 +54,17 @@ This project lives inside the shared **`codealpha_tasks`** repo, alongside
 the other CodeAlpha internship projects, as the `CodeAlpha_MusicGeneration`
 subfolder.
 
-1. **Push to GitHub** (already done — part of the shared `codealpha_tasks` repo)
+1. **Push to GitHub**
 
 2. **Deploy on Streamlit Cloud**
-   - Go to https://share.streamlit.io → sign in with GitHub.
-   - Click **"Create app"** → select repo `sachin8987-coder/codealpha_tasks`.
+   - https://share.streamlit.io → sign in with GitHub.
+   - **"Create app"** → `sachin8987-coder/codealpha_tasks`.
    - Branch: `main`
    - Main file path: `CodeAlpha_MusicGeneration/app.py`
-   - **Advanced settings → Python version: 3.11** (required — TensorFlow
-     doesn't yet ship wheels for the newest Python versions Streamlit Cloud
-     defaults to).
-   - Click **Deploy**. First build takes a few minutes (TensorFlow is a
-     larger dependency).
-   - You'll get a live URL like the demo link above.
+   - **Advanced settings → Python version: 3.11** 
+   - **Deploy**
 
 3. **Verify & Submit**
    - Open the live URL, click "Generate New Music", download the `.mid`, and
      play it in any MIDI player (VLC, MuseScore, Windows Media Player) to
      confirm it sounds musical (not random noise).
-   - Record a short video explaining the project, post it on LinkedIn tagging
-     **@CodeAlpha** with the repo link.
-   - Submit the repo link + LinkedIn post link via the submission form.
-
-## Notes
-- Training uses only 40 chorales / 40 epochs to keep things fast for a demo —
-  more chorales + more epochs (100+) will produce noticeably more
-  Bach-like, coherent music, at the cost of longer training time.
-- The "temperature" slider in the app controls how safe vs. experimental the
-  generated melody is — lower values sound closer to the training data,
-  higher values are more surprising (and sometimes less musical).
