@@ -41,26 +41,16 @@ objects. No retraining needed; the TF-IDF matrix rebuilds automatically
 This project lives inside the `codealpha_tasks` repo, alongside the other
 CodeAlpha internship projects, as the `CodeAlpha_FAQ_Chatbot` subfolder.
 
-1. **Push to GitHub** (already done — part of the shared `codealpha_tasks` repo)
+1. **Push to GitHub** 
 
 2. **Deploy on Streamlit Cloud**
-   - Go to https://share.streamlit.io and sign in with GitHub.
-   - Click **"Create app"** → select repo `sachin8987-coder/codealpha_tasks`.
+   - https://share.streamlit.io and sign in with GitHub.
+   -  **"Create app"** →  `sachin8987-coder/codealpha_tasks`.
    - Branch: `main`
    - Main file path: `CodeAlpha_FAQ_Chatbot/app.py`
-   - Click **Deploy**. Wait 1–2 minutes.
-   - You'll get a public URL like the live demo link above.
+   - **Deploy**
+     
 
-3. **Verify**
-   - Open the URL and test a few questions to confirm matching works live.
 
-4. **Submit**
-   - Record a short video explaining the project, post on LinkedIn tagging
-     **@CodeAlpha**, and include the GitHub repo link.
-   - Fill the CodeAlpha submission form with repo link + LinkedIn post link.
 
-## Notes
-- Threshold (`CONFIDENCE_THRESHOLD = 0.25`) controls when the bot admits it
-  doesn't know an answer — tune it if you add more/less FAQs.
-- For a larger FAQ set, consider swapping TF-IDF for sentence-transformers
-  embeddings for better semantic matching (optional enhancement, not required).
+
